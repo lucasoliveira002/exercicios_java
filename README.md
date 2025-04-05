@@ -1,2 +1,2 @@
 # exercicios_java
-Alguns exercicios de Java
+Exercicios resolidos da lista 3 (da escola)

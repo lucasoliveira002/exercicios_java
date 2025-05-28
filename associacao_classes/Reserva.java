@@ -25,6 +25,20 @@ public class Reserva {
 		this.saida = LocalDate.of(anoSaida, mesSaida, diaSaida );
 		this.hospede= new Hospede(nome,cpf,email);
 	}
+	
+	public void exibirResumo() {
+	    System.out.println("Número da reserva: " + numero);
+	    System.out.println("Dia da entrada: " + entrada.getDayOfMonth());
+	    System.out.println("Mês da entrada: " + entrada.getMonthValue());
+	    System.out.println("Ano da entrada: " + entrada.getYear());
+	    System.out.println("Dia da saída: " + saida.getDayOfMonth());
+	    System.out.println("Mês da saída: " + saida.getMonthValue());
+	    System.out.println("Ano da saída: " + saida.getYear());
+	    System.out.println("Nome: " + hospede.getNome());
+	    System.out.println("CPF: " + hospede.getCpf());
+	    System.out.println("Email: " + hospede.getEmail());
+	}
+
 
 	public Integer getNumero() {
 		return numero;
